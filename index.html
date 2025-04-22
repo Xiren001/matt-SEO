@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO Services | Likeable Losers</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media768.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo Section -->
+            <div class="logo">
+                <!-- Updated the URL to the correct logo file -->
+                <img src="https://likeablelosers.com/wp-content/uploads/2025/02/Your-paragraph-text-e1738435336651.png"
+                    alt="Website Logo" class="logo-img">
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="main-nav">
+                <!-- Hamburger Menu (Mobile Only) -->
+                <div class="hamburger" id="hamburger">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+
+                <!-- Navigation Links -->
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-line"></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#process" class="nav-link">Process</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                </ul>
+
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-item contact-btn"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class=" hero">
+        <div class="container">
+            <h1>Rank Higher. Grow Faster.</h1>
+            <p>Boost your visibility. Drive traffic. Convert better—Let’s make your business Google’s favorite.</p>
+            <a href="#contact" class="cta">Let’s Talk SEO</a>
+        </div>
+    </section>
+
+    <section class="container services  ">
+        <h2>What We Do</h2>
+        <ul>
+            <li>✔️ SEO Audits & Optimization</li>
+            <li>✔️ Google My Business Optimization</li>
+            <li>✔️ Keyword Research & Strategy</li>
+            <li>✔️ Local SEO Domination</li>
+            <li>✔️ Review Management & Rating Boosts</li>
+            <li>✔️ Technical SEO Fixes & Page Speed Improvements</li>
+            <li>✔️ Backlink Building & Outreach</li>
+            <li>✔️ Competitor Analysis & Position Tracking</li>
+        </ul>
+    </section>
+
+    <section class="container  ">
+        <h2>Why It Works</h2>
+        <div class="stats">
+            <div class="stat">
+                <h3>82%</h3>
+                <p>of clicks go to the first page on Google</p>
+            </div>
+            <div class="stat">
+                <h3>3x</h3>
+                <p>traffic boost in 90 days on average</p>
+            </div>
+            <div class="stat">
+                <h3>+1.2★</h3>
+                <p>average rating increase with our review strategy</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container process  ">
+        <h2>Our Process</h2>
+        <div class="process-step">
+            <h3>1. Discovery</h3>
+            <p>We learn your business goals, target market, and current SEO performance.</p>
+        </div>
+        <div class="process-step">
+            <h3>2. Optimization</h3>
+            <p>We optimize your content, metadata, performance, and local listings.</p>
+        </div>
+        <div class="process-step">
+            <h3>3. Growth</h3>
+            <p>We implement content strategies and link-building to grow your authority and traffic.</p>
+        </div>
+        <div class="process-step">
+            <h3>4. Reporting</h3>
+            <p>We provide clear monthly reports with results and next steps.</p>
+        </div>
+    </section>
+
+    <section class="container testimonials  ">
+        <h2>Client Love</h2>
+        <p>"They got us from page 5 to the top 3 results in just 6 weeks." – Happy Biz Owner</p>
+        <p>"The traffic increase was instant. Highly recommended." – Local Café</p>
+        <p>"Likeable Losers took care of everything and gave us real, measurable results." – Startup Founder</p>
+    </section>
+
+    <section class="container faq ">
+        <h2>FAQs</h2>
+        <div class="faq-item">
+            <h3>How long before I see results?</h3>
+            <p>Most clients see initial improvements in 4–6 weeks, with major gains over 3 months.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What’s included in a free audit?</h3>
+            <p>You get a comprehensive breakdown of your site's SEO health, keyword rankings, and opportunities.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can you help with bad reviews?</h3>
+            <p>Yes—we help you gather more positive reviews and manage negative ones professionally.</p>
+        </div>
+    </section>
+
+    <footer id="contact" class="">
+        <div class="container">
+            <h2>Ready to make Google love you?</h2>
+            <a href="#" class="cta">Get Your Free Visibility Audit →</a>
+            <p style="margin-top:1rem; color:#888;">Custom strategies. Transparent pricing. Real results.</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Hamburger Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const icons = document.querySelectorAll(".lottie-icon");
+
+            icons.forEach(icon => {
+                const animatedSrc = icon.getAttribute("data-animated");
+                const staticSrc = icon.getAttribute("data-static");
+
+                // Ensure the static image is loaded by default
+                icon.src = staticSrc;
+
+                icon.parentElement.addEventListener("mouseenter", function () {
+                    icon.src = animatedSrc;
+                });
+
+                icon.parentElement.addEventListener("mouseleave", function () {
+                    icon.src = staticSrc;
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

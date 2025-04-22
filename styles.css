@@ -1,0 +1,216 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #161b22;
+    color: #f0f0f0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 20px;
+    border: 1px solid #2d333b;
+    border-radius: 20px;
+
+/* From https://css.glass */
+background: rgba(22, 27, 34, 0);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.3px);
+-webkit-backdrop-filter: blur(10.3px);
+}
+
+.logo img {
+    height: 35px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-line{
+    border: 1px solid #2c313a;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0 0 0 1.5rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #E45528;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background: #FD1D1D;
+    background: linear-gradient(52deg, rgba(253, 29, 29, 1) 0%, rgba(247, 123, 89, 1) 52%, rgba(249, 115, 22, 1) 100%);
+    color: #161b22;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #fb923c;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+
+
+.container {
+    max-width: 1100px;
+    height: 100%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.hero {
+    height: 80dvh;
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #ccc;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    background: #FD1D1D;
+    background: linear-gradient(52deg, rgba(253, 29, 29, 1) 0%, rgba(247, 123, 89, 1) 52%, rgba(249, 115, 22, 1) 100%);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #fb923c;
+}
+
+section {
+    padding: 3rem 0;
+    border-top: 1px solid #2c313a;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    padding: 0.5rem 0;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.stat {
+    flex: 1;
+    min-width: 200px;
+    background-color: #1e232b;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.testimonials {
+    font-style: italic;
+    color: #aaa;
+}
+
+.process {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.process-step {
+    background: #1e232b;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.faq {
+    background: #1a1f27;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.faq-item+.faq-item {
+    margin-top: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 3rem 2rem;
+}
