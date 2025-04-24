@@ -1,0 +1,71 @@
+    <div class="chart">
+        <div class="bar bar1" data-label="Jan"></div>
+        <div class="bar bar2" data-label="Feb"></div>
+        <div class="bar bar3" data-label="Mar"></div>
+        <div class="bar bar4" data-label="Apr"></div>
+        <div class="bar bar5" data-label="May"></div>
+    </div>
+
+    .chart {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 20px;
+        height: 80dvh;
+        width: 100%;
+        padding: 4rem 2rem 0 2rem;
+        z-index: -1;
+    }
+    
+    .bar {
+        width: 12%;
+        background: linear-gradient(52deg, rgba(253, 29, 29, 1) 0%, rgba(247, 123, 89, 1) 52%, rgba(249, 115, 22, 1) 100%);
+        border-radius: 12px 12px 0 0;
+        height: 0;
+        position: relative;
+        animation: grow 1s ease-out forwards;
+    }
+    
+    .bar::after {
+        position: absolute;
+        top: -30px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    
+    .bar1 {
+        animation-delay: 0.2s;
+        --target-height: 70%;
+    }
+    
+    .bar2 {
+        animation-delay: 0.4s;
+        --target-height: 50%;
+    }
+    
+    .bar3 {
+        animation-delay: 0.6s;
+        --target-height: 80%;
+    }
+    
+    .bar4 {
+        animation-delay: 0.8s;
+        --target-height: 60%;
+    }
+    
+    .bar5 {
+        animation-delay: 1s;
+        --target-height: 40%;
+    }
+    
+    @keyframes grow {
+        to {
+            height: var(--target-height);
+        }
+    }
