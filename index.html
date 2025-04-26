@@ -11,10 +11,11 @@
     <link rel="preload" href="AcuminPro-ExtraLightItalic.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="AcuminPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="AcuminPro-ExtraLight.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header >
         <div class="container">
             <!-- Logo Section -->
             <div class="logo">
@@ -74,109 +75,427 @@
         </div>
     </section>
 
+    <div class="bg-image">
+        <div class="image">
 
+        </div>
+    </div>
 
-    <section class="container services  ">
-        <h2>What We Do</h2>
-        <ul>
-            <li>✔️ SEO Audits & Optimization</li>
-            <li>✔️ Google My Business Optimization</li>
-            <li>✔️ Keyword Research & Strategy</li>
-            <li>✔️ Local SEO Domination</li>
-            <li>✔️ Review Management & Rating Boosts</li>
-            <li>✔️ Technical SEO Fixes & Page Speed Improvements</li>
-            <li>✔️ Backlink Building & Outreach</li>
-            <li>✔️ Competitor Analysis & Position Tracking</li>
+    <section class="container services">
+        <div class="sec-head" data-aos="fade-up"
+        >
+            <h2>What We Do</h2>
+        </div>
+
+        <ul data-aos="fade-up"
+        >
+            <li>
+                <div class="icon">
+                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M11 6C13.7614 6 16 8.23858 16 11M16.6588 16.6549L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="content">
+                    <h3>SEO Audits & Optimization</h3>
+                    <p>Improve rankings by fixing technical issues and boosting site quality.</p>
+                </div>
+            </li>
+            <li>
+                <div class="icon">
+                    <svg width="25px" height="25px" viewBox="-3 0 20 20" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <title>pin_fill_rounded_circle [#ffffff]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs> </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-383.000000, -5399.000000)"
+                                    fill="#ffffff">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M337,5246.635 C337,5244.978 335.657,5243.635 334,5243.635 C332.343,5243.635 331,5244.978 331,5246.635 C331,5248.292 332.343,5249.635 334,5249.635 C335.657,5249.635 337,5248.292 337,5246.635 M341,5246 C341,5249.866 337.866,5259 334,5259 C330.134,5259 327,5249.866 327,5246 C327,5242.134 330.134,5239 334,5239 C337.866,5239 341,5242.134 341,5246 M335,5246.635 C335,5247.186 334.551,5247.635 334,5247.635 C333.449,5247.635 333,5247.186 333,5246.635 C333,5246.084 333.449,5245.635 334,5245.635 C334.551,5245.635 335,5246.084 335,5246.635"
+                                            id="pin_fill_rounded_circle-[#ffffff]"> </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="content">
+                    <h3>Google My Business Optimization</h3>
+                    <p>Maximize local visibility with a fully optimized GMB profile.</p>
+                </div>
+            </li>
+            <li>
+                <div class="icon">
+                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22 8.29344C22 11.7692 19.1708 14.5869 15.6807 14.5869C15.0439 14.5869 13.5939 14.4405 12.8885 13.8551L12.0067 14.7333C11.4883 15.2496 11.6283 15.4016 11.8589 15.652C11.9551 15.7565 12.0672 15.8781 12.1537 16.0505C12.1537 16.0505 12.8885 17.075 12.1537 18.0995C11.7128 18.6849 10.4783 19.5045 9.06754 18.0995L8.77362 18.3922C8.77362 18.3922 9.65538 19.4167 8.92058 20.4412C8.4797 21.0267 7.30403 21.6121 6.27531 20.5876L5.2466 21.6121C4.54119 22.3146 3.67905 21.9048 3.33616 21.6121L2.45441 20.7339C1.63143 19.9143 2.1115 19.0264 2.45441 18.6849L10.0963 11.0743C10.0963 11.0743 9.3615 9.90338 9.3615 8.29344C9.3615 4.81767 12.1907 2 15.6807 2C19.1708 2 22 4.81767 22 8.29344ZM15.681 10.4889C16.8984 10.4889 17.8853 9.50601 17.8853 8.29353C17.8853 7.08105 16.8984 6.09814 15.681 6.09814C14.4635 6.09814 13.4766 7.08105 13.4766 8.29353C13.4766 9.50601 14.4635 10.4889 15.681 10.4889Z"
+                                fill="#ffffff"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="content">
+                    <h3>Keyword Research & Strategy</h3>
+                    <p>Target the right keywords to attract your ideal customers.</p>
+                </div>
+            </li>
+            <li>
+                <div class="icon">
+                    <svg width="30px" height="30px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M10 3L9.00001 4L11.2929 6.29289L8.50001 9.08579L5.50001 6.08579L0.292908 11.2929L1.70712 12.7071L5.50001 8.91421L8.50001 11.9142L12.7071 7.70711L15 10L16 9L16 3H10Z"
+                                fill="#ffffff"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="content">
+                    <h3>Local SEO Domination</h3>
+                    <p>Get found first by customers in your area.</p>
+                </div>
+            </li>
+            <li>
+                <div class="icon">
+                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M11.2691 4.41115C11.5006 3.89177 11.6164 3.63208 11.7776 3.55211C11.9176 3.48263 12.082 3.48263 12.222 3.55211C12.3832 3.63208 12.499 3.89177 12.7305 4.41115L14.5745 8.54808C14.643 8.70162 14.6772 8.77839 14.7302 8.83718C14.777 8.8892 14.8343 8.93081 14.8982 8.95929C14.9705 8.99149 15.0541 9.00031 15.2213 9.01795L19.7256 9.49336C20.2911 9.55304 20.5738 9.58288 20.6997 9.71147C20.809 9.82316 20.8598 9.97956 20.837 10.1342C20.8108 10.3122 20.5996 10.5025 20.1772 10.8832L16.8125 13.9154C16.6877 14.0279 16.6252 14.0842 16.5857 14.1527C16.5507 14.2134 16.5288 14.2807 16.5215 14.3503C16.5132 14.429 16.5306 14.5112 16.5655 14.6757L17.5053 19.1064C17.6233 19.6627 17.6823 19.9408 17.5989 20.1002C17.5264 20.2388 17.3934 20.3354 17.2393 20.3615C17.0619 20.3915 16.8156 20.2495 16.323 19.9654L12.3995 17.7024C12.2539 17.6184 12.1811 17.5765 12.1037 17.56C12.0352 17.5455 11.9644 17.5455 11.8959 17.56C11.8185 17.5765 11.7457 17.6184 11.6001 17.7024L7.67662 19.9654C7.18404 20.2495 6.93775 20.3915 6.76034 20.3615C6.60623 20.3354 6.47319 20.2388 6.40075 20.1002C6.31736 19.9408 6.37635 19.6627 6.49434 19.1064L7.4341 14.6757C7.46898 14.5112 7.48642 14.429 7.47814 14.3503C7.47081 14.2807 7.44894 14.2134 7.41394 14.1527C7.37439 14.0842 7.31195 14.0279 7.18708 13.9154L3.82246 10.8832C3.40005 10.5025 3.18884 10.3122 3.16258 10.1342C3.13978 9.97956 3.19059 9.82316 3.29993 9.71147C3.42581 9.58288 3.70856 9.55304 4.27406 9.49336L8.77835 9.01795C8.94553 9.00031 9.02911 8.99149 9.10139 8.95929C9.16534 8.93081 9.2226 8.8892 9.26946 8.83718C9.32241 8.77839 9.35663 8.70162 9.42508 8.54808L11.2691 4.41115Z"
+                                stroke="#ededed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="content">
+                    <h3>Review Management & Rating Boosts</h3>
+                    <p>Build trust and attract more customers with better reviews.</p>
+                </div>
+            </li>
+            <li>
+                <div class="icon">
+                    <svg fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="924 796 200 200"
+                        enable-background="new 924 796 200 200" xml:space="preserve" stroke="#ffffff">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <path
+                                    d="M1049.078,903.431h-3.447c-3.104,0-5.875-1.963-6.904-4.891c-0.626-1.793-1.354-3.536-2.176-5.227 c-1.361-2.806-0.799-6.167,1.404-8.369l2.381-2.382c4.029-4.028,4.029-10.556,0.002-14.583l-1.717-1.717 c-4.025-4.024-10.557-4.028-14.58,0l-2.436,2.433c-2.193,2.196-5.538,2.769-8.336,1.425c-1.696-0.811-3.442-1.532-5.236-2.155 c-2.948-1.017-4.928-3.795-4.928-6.91v-3.37c0-5.693-4.618-10.31-10.309-10.31h-2.43c-5.695,0-10.312,4.616-10.312,10.31v3.444 c0,3.107-1.962,5.877-4.892,6.906c-1.792,0.627-3.534,1.354-5.224,2.176c-2.803,1.361-6.166,0.796-8.371-1.406l-2.377-2.382 c-4.03-4.028-10.558-4.028-14.584,0l-1.719,1.717c-4.026,4.028-4.028,10.555,0,14.583l2.434,2.432 c2.193,2.197,2.765,5.54,1.421,8.341c-0.812,1.691-1.532,3.44-2.15,5.234c-1.021,2.945-3.798,4.926-6.915,4.926h-3.367 c-5.695,0-10.312,4.617-10.312,10.313v2.429c0,5.693,4.617,10.31,10.312,10.31h3.441c3.106,0,5.876,1.963,6.903,4.893 c0.63,1.791,1.358,3.537,2.18,5.227c1.361,2.804,0.795,6.164-1.408,8.367l-2.379,2.383c-4.029,4.027-4.027,10.555,0,14.582 l1.718,1.718c4.025,4.023,10.553,4.026,14.58-0.003l2.431-2.432c2.195-2.194,5.54-2.768,8.341-1.424 c1.694,0.813,3.441,1.533,5.236,2.155c2.946,1.018,4.927,3.795,4.927,6.913v3.364c-0.004,5.699,4.614,10.313,10.311,10.313h2.427 c5.696,0,10.314-4.614,10.311-10.309v-3.445c0-3.104,1.962-5.875,4.892-6.905c1.792-0.628,3.537-1.354,5.229-2.175 c2.801-1.362,6.165-0.798,8.368,1.404l2.379,2.38c4.027,4.029,10.555,4.025,14.583,0.002l1.717-1.718 c4.027-4.026,4.03-10.557,0-14.581l-2.432-2.433c-2.197-2.193-2.768-5.54-1.426-8.337c0.814-1.696,1.533-3.445,2.154-5.24 c1.021-2.947,3.795-4.926,6.914-4.926h3.367c5.695,0.002,10.31-4.616,10.31-10.312v-2.429 C1059.385,908.049,1054.771,903.427,1049.078,903.431z M991.694,940.147c-13.852,0-25.081-11.227-25.081-25.078 c0-13.853,11.229-25.08,25.081-25.08c13.85,0,25.079,11.228,25.079,25.08C1016.772,928.921,1005.544,940.147,991.694,940.147z">
+                                </path>
+                                <path
+                                    d="M1117.307,845.487h-1.727c-2.557,0-4.847-1.583-5.752-3.974c-0.229-0.609-0.479-1.212-0.746-1.804 c-1.053-2.329-0.554-5.07,1.256-6.876l1.219-1.221c2.613-2.611,2.613-6.853,0-9.466l-0.473-0.473c-2.613-2.612-6.852-2.612-9.465,0 l-1.219,1.221c-1.809,1.809-4.547,2.308-6.877,1.258c-0.593-0.268-1.192-0.516-1.805-0.747c-2.389-0.903-3.975-3.196-3.975-5.748 v-1.729c0-3.697-2.996-6.692-6.689-6.692h-0.668c-3.698,0-6.696,2.995-6.696,6.692v1.724c0,2.557-1.581,4.85-3.972,5.753 c-0.609,0.231-1.215,0.479-1.805,0.747c-2.328,1.05-5.069,0.551-6.876-1.256l-1.22-1.221c-2.611-2.614-6.854-2.613-9.467,0.001 l-0.472,0.472c-2.613,2.613-2.613,6.853,0,9.465l1.219,1.22c1.806,1.806,2.31,4.547,1.257,6.876 c-0.268,0.592-0.517,1.194-0.748,1.804c-0.903,2.391-3.193,3.977-5.748,3.977h-1.727c-3.695-0.002-6.691,2.997-6.691,6.69v0.669 c0,3.696,2.996,6.693,6.691,6.693h1.722c2.557-0.001,4.85,1.582,5.753,3.973c0.231,0.611,0.48,1.215,0.747,1.809 c1.052,2.326,0.552,5.065-1.255,6.871l-1.219,1.224c-2.613,2.609-2.613,6.851,0,9.463l0.475,0.473c2.611,2.614,6.852,2.614,9.463,0 l1.217-1.219c1.807-1.806,4.549-2.308,6.877-1.255c0.592,0.269,1.197,0.517,1.809,0.748c2.389,0.901,3.974,3.193,3.974,5.747v1.724 c-0.004,3.694,2.995,6.692,6.692,6.692h0.669c3.693,0,6.692-2.994,6.692-6.692v-1.721c0-2.556,1.582-4.849,3.971-5.752 c0.612-0.23,1.216-0.479,1.809-0.746c2.326-1.053,5.068-0.551,6.873,1.251l1.223,1.222c2.609,2.615,6.85,2.615,9.465,0l0.473-0.475 c2.611-2.611,2.611-6.851,0-9.464l-1.221-1.22c-1.805-1.806-2.307-4.547-1.256-6.875c0.268-0.59,0.518-1.194,0.749-1.805 c0.901-2.391,3.191-3.976,5.747-3.976h1.725c3.694,0.004,6.691-2.995,6.695-6.69v-0.669 C1123.996,848.483,1121,845.487,1117.307,845.487z M1080.717,867.24c-8.131,0-14.723-6.592-14.723-14.724 s6.592-14.724,14.723-14.724c8.133,0,14.725,6.592,14.725,14.724S1088.85,867.24,1080.717,867.24z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="content">
+                    <h3>Technical SEO & Speed Improvements</h3>
+                    <p>Fix site errors and improve performance for faster load times.</p>
+                </div>
+            </li>
+            <li>
+                <div class="icon">
+                    <svg width="25px" height="25px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M7.05025 1.53553C8.03344 0.552348 9.36692 0 10.7574 0C13.6528 0 16 2.34721 16 5.24264C16 6.63308 15.4477 7.96656 14.4645 8.94975L12.4142 11L11 9.58579L13.0503 7.53553C13.6584 6.92742 14 6.10264 14 5.24264C14 3.45178 12.5482 2 10.7574 2C9.89736 2 9.07258 2.34163 8.46447 2.94975L6.41421 5L5 3.58579L7.05025 1.53553Z"
+                                fill="#ffffff"></path>
+                            <path
+                                d="M7.53553 13.0503L9.58579 11L11 12.4142L8.94975 14.4645C7.96656 15.4477 6.63308 16 5.24264 16C2.34721 16 0 13.6528 0 10.7574C0 9.36693 0.552347 8.03344 1.53553 7.05025L3.58579 5L5 6.41421L2.94975 8.46447C2.34163 9.07258 2 9.89736 2 10.7574C2 12.5482 3.45178 14 5.24264 14C6.10264 14 6.92742 13.6584 7.53553 13.0503Z"
+                                fill="#ffffff"></path>
+                            <path d="M5.70711 11.7071L11.7071 5.70711L10.2929 4.29289L4.29289 10.2929L5.70711 11.7071Z"
+                                fill="#ffffff"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="content">
+                    <h3>Backlink Building & Outreach</h3>
+                    <p>Boost authority with quality backlinks from trusted sources.</p>
+                </div>
+            </li>
+            <li>
+                <div class="icon">
+                    <svg width="30px" height="30px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="m 8 1 c -1.65625 0 -3 1.34375 -3 3 s 1.34375 3 3 3 s 3 -1.34375 3 -3 s -1.34375 -3 -3 -3 z m -1.5 7 c -2.492188 0 -4.5 2.007812 -4.5 4.5 v 0.5 c 0 1.109375 0.890625 2 2 2 h 8 c 1.109375 0 2 -0.890625 2 -2 v -0.5 c 0 -2.492188 -2.007812 -4.5 -4.5 -4.5 z m 0 0"
+                                fill="#ffffff"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="content">
+                    <h3>Competitor Analysis & Tracking</h3>
+                    <p>Stay ahead with insights into your competitors’ strategies.</p>
+                </div>
+            </li>
         </ul>
+
     </section>
 
-    
 
-    <section class="container  ">
-        <h2>Why It Works</h2>
-        <div class="stats">
+
+    <section class="container">
+        <div class="sec-head" data-aos="fade-up"
+        >
+            <h2>Why It Works</h2>
+        </div>
+
+        <div class="stats" data-aos="fade-up"
+        >
             <div class="stat">
-                <h3>82%</h3>
-                <p>of clicks go to the first page on Google</p>
+                <h3>
+                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M11 6C13.7614 6 16 8.23858 16 11M16.6588 16.6549L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                    82%
+                </h3>
+                <p class="highlight">of clicks go to the first page of Google</p>
+                <p>Ranking on page one drastically improves visibility, trust, and traffic — that's our mission for
+                    every client.</p>
             </div>
             <div class="stat">
-                <h3>3x</h3>
-                <p>traffic boost in 90 days on average</p>
+                <h3>
+                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.7242 8.45192L7.28876 7.19383C6.55281 8.18469 5.92055 9.24884 5.40213 10.3696L3.7242 8.45192ZM1.24742 8.6585L4.54987 12.4327L4.07152 13.6286C3.92296 14 4.01003 14.4242 4.29289 14.7071L4.60651 15.0207C2.90342 16.9411 1.9627 18.9496 1.05132 21.6838C0.931539 22.0431 1.02506 22.4393 1.29289 22.7071C1.56073 22.9749 1.95689 23.0685 2.31623 22.9487C5.05037 22.0373 7.05889 21.0966 8.97928 19.3935L9.29289 19.7071C9.57576 19.99 9.99997 20.077 10.3714 19.9285L11.5673 19.4501L15.3415 22.7526C15.5911 22.971 15.9327 23.0514 16.2535 22.9673C16.5744 22.8832 16.8326 22.6456 16.943 22.3328L19.9291 13.8722C21.8977 11.5428 23 8.57479 23 5.48078V2C23 1.44772 22.5523 1 22 1H18.5192C15.4252 1 12.4572 2.10225 10.1278 4.0709L1.66718 7.05701C1.35444 7.16739 1.11676 7.42565 1.03268 7.74646C0.948589 8.06728 1.02903 8.40891 1.24742 8.6585ZM3.68527 20.3147C4.31277 18.7992 5.017 17.5929 6.02356 16.4378L7.56223 17.9764C6.40713 18.983 5.20083 19.6872 3.68527 20.3147ZM10.2408 17.8266L9.70711 17.2929L6.70711 14.2929L6.17337 13.7592L6.88327 11.9844C7.53465 10.356 8.44936 8.84567 9.59079 7.51401L10.1674 6.84129C12.2572 4.40319 15.308 3 18.5192 3H21V5.48078C21 8.69196 19.5968 11.7428 17.1587 13.8326L16.486 14.4092C15.1543 15.5506 13.644 16.4653 12.0156 17.1167L10.2408 17.8266ZM15.5481 20.2758L13.6304 18.5979C14.7512 18.0795 15.8153 17.4472 16.8062 16.7112L15.5481 20.2758ZM15 8C15 7.44772 15.4477 7 16 7C16.5523 7 17 7.44772 17 8C17 8.55228 16.5523 9 16 9C15.4477 9 15 8.55228 15 8ZM16 5C14.3431 5 13 6.34315 13 8C13 9.65685 14.3431 11 16 11C17.6569 11 19 9.65685 19 8C19 6.34315 17.6569 5 16 5Z"
+                                fill="#ffffff"></path>
+                        </g>
+                    </svg>
+                    3x
+                </h3>
+                <p class="highlight">traffic boost in just 90 days</p>
+                <p>Our SEO strategies are built for momentum. Most businesses see triple the visits within 3 months.</p>
             </div>
             <div class="stat">
-                <h3>+1.2★</h3>
-                <p>average rating increase with our review strategy</p>
+                <h3>
+                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M11.2691 4.41115C11.5006 3.89177 11.6164 3.63208 11.7776 3.55211C11.9176 3.48263 12.082 3.48263 12.222 3.55211C12.3832 3.63208 12.499 3.89177 12.7305 4.41115L14.5745 8.54808C14.643 8.70162 14.6772 8.77839 14.7302 8.83718C14.777 8.8892 14.8343 8.93081 14.8982 8.95929C14.9705 8.99149 15.0541 9.00031 15.2213 9.01795L19.7256 9.49336C20.2911 9.55304 20.5738 9.58288 20.6997 9.71147C20.809 9.82316 20.8598 9.97956 20.837 10.1342C20.8108 10.3122 20.5996 10.5025 20.1772 10.8832L16.8125 13.9154C16.6877 14.0279 16.6252 14.0842 16.5857 14.1527C16.5507 14.2134 16.5288 14.2807 16.5215 14.3503C16.5132 14.429 16.5306 14.5112 16.5655 14.6757L17.5053 19.1064C17.6233 19.6627 17.6823 19.9408 17.5989 20.1002C17.5264 20.2388 17.3934 20.3354 17.2393 20.3615C17.0619 20.3915 16.8156 20.2495 16.323 19.9654L12.3995 17.7024C12.2539 17.6184 12.1811 17.5765 12.1037 17.56C12.0352 17.5455 11.9644 17.5455 11.8959 17.56C11.8185 17.5765 11.7457 17.6184 11.6001 17.7024L7.67662 19.9654C7.18404 20.2495 6.93775 20.3915 6.76034 20.3615C6.60623 20.3354 6.47319 20.2388 6.40075 20.1002C6.31736 19.9408 6.37635 19.6627 6.49434 19.1064L7.4341 14.6757C7.46898 14.5112 7.48642 14.429 7.47814 14.3503C7.47081 14.2807 7.44894 14.2134 7.41394 14.1527C7.37439 14.0842 7.31195 14.0279 7.18708 13.9154L3.82246 10.8832C3.40005 10.5025 3.18884 10.3122 3.16258 10.1342C3.13978 9.97956 3.19059 9.82316 3.29993 9.71147C3.42581 9.58288 3.70856 9.55304 4.27406 9.49336L8.77835 9.01795C8.94553 9.00031 9.02911 8.99149 9.10139 8.95929C9.16534 8.93081 9.2226 8.8892 9.26946 8.83718C9.32241 8.77839 9.35663 8.70162 9.42508 8.54808L11.2691 4.41115Z"
+                                stroke="#ededed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+
+                    +1.2★
+                </h3>
+                <p class="highlight">average rating increase</p>
+                <p>Our review system helps your business earn trust fast — improving local rankings and conversions.</p>
             </div>
         </div>
     </section>
 
-    <section class="container process  ">
-        <h2>Our Process</h2>
-        <div class="process-step">
-            <h3>1. Discovery</h3>
-            <p>We learn your business goals, target market, and current SEO performance.</p>
+
+    <section class="container process">
+        <div class="sec-head" data-aos="fade-up"
+        >
+            <h2>Our Process</h2>
         </div>
-        <div class="process-step">
-            <h3>2. Optimization</h3>
-            <p>We optimize your content, metadata, performance, and local listings.</p>
+
+        <div class="process-step" data-aos="fade-up"
+        >
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <h3>Discovery</h3>
+                <p>We learn your business goals, target market, and current SEO performance to create a tailored
+                    roadmap.</p>
+            </div>
         </div>
-        <div class="process-step">
-            <h3>3. Growth</h3>
-            <p>We implement content strategies and link-building to grow your authority and traffic.</p>
+        <div class="process-step" data-aos="fade-up"
+        >
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <h3>Optimization</h3>
+                <p>We optimize on-page elements, technical SEO, speed, and local SEO profiles for better visibility.</p>
+            </div>
         </div>
-        <div class="process-step">
-            <h3>4. Reporting</h3>
-            <p>We provide clear monthly reports with results and next steps.</p>
+        <div class="process-step" data-aos="fade-up"
+        >
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <h3>Growth</h3>
+                <p>We roll out a content strategy, build backlinks, and improve domain authority to grow traffic and
+                    leads.</p>
+            </div>
+        </div>
+        <div class="process-step" data-aos="fade-up"
+        >
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <h3>Reporting</h3>
+                <p>You get clear, actionable reports every month — with wins, insights, and upcoming recommendations.
+                </p>
+            </div>
         </div>
     </section>
+
 
     <section class="container testimonials">
-        <h2>Client Love</h2>
-        
-        <div class="testimonial">
-          <p class="quote">“They got us from page 5 to the top 3 results in just 6 weeks.”</p>
-          <p class="author">– Happy Biz Owner</p>
+        <div class="sec-head" data-aos="fade-up"
+        >
+            <h2>Client Love</h2>
         </div>
-      
-        <div class="testimonial">
-          <p class="quote">“The traffic increase was instant. Highly recommended.”</p>
-          <p class="author">– Local Café</p>
-        </div>
-      
-        <div class="testimonial">
-          <p class="quote">“Likeable Losers took care of everything and gave us real, measurable results.”</p>
-          <p class="author">– Startup Founder</p>
-        </div>
-      </section>
-      
+        <div class="testimonial" data-aos="fade-up"
+        >
+            <div class="testimonial-card">
+                <img src="https://picsum.photos/id/237/200/300" alt="Happy Biz Owner">
+                <div class="testimonial-content">
+                    <p class="quote">“They got us from page 5 to the top 3 results in just 6 weeks.”</p>
+                    <p class="author">– Happy Biz Owner</p>
+                </div>
+            </div>
 
-    <section class="container faq ">
-        <h2>FAQs</h2>
-        <div class="faq-item">
-            <h3>How long before I see results?</h3>
-            <p>Most clients see initial improvements in 4–6 weeks, with major gains over 3 months.</p>
-        </div>
-        <div class="faq-item">
-            <h3>What’s included in a free audit?</h3>
-            <p>You get a comprehensive breakdown of your site's SEO health, keyword rankings, and opportunities.</p>
-        </div>
-        <div class="faq-item">
-            <h3>Can you help with bad reviews?</h3>
-            <p>Yes—we help you gather more positive reviews and manage negative ones professionally.</p>
+            <div class="testimonial-card">
+                <img src="https://a.storyblok.com/f/191576/1200x800/215e59568f/round_profil_picture_after_.webp"
+                    alt="Local Café Owner">
+                <div class="testimonial-content">
+                    <p class="quote">“The traffic increase was instant. Highly recommended.”</p>
+                    <p class="author">– Local Café</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://demo.zoloblocks.com/wp-content/uploads/2023/12/pro-demo0-2.webp"
+                    alt="Startup Founder">
+                <div class="testimonial-content">
+                    <p class="quote">“Likeable Losers took care of everything and gave us real, measurable results.”</p>
+                    <p class="author">– Startup Founder</p>
+                </div>
+            </div>
         </div>
     </section>
+
+
+
+
+    <section class="container faq">
+        <div class="sec-head" data-aos="fade-up"
+        >
+            <h2>FAQs</h2>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up"
+        >
+            <h3 class="faq-question">How long before I see results?</h3>
+            <p class="faq-answer">Most clients see initial improvements in 4–6 weeks, with major gains over 3 months.
+            </p>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up"
+        >
+            <h3 class="faq-question">What’s included in a free audit?</h3>
+            <p class="faq-answer">You get a comprehensive breakdown of your site's SEO health, keyword rankings, and
+                opportunities.</p>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up"
+        >
+            <h3 class="faq-question">Can you help with bad reviews?</h3>
+            <p class="faq-answer">Yes—we help you gather more positive reviews and manage negative ones professionally.
+            </p>
+        </div>
+    </section>
+
 
     <footer id="contact" class="">
         <div class="container">
-            <h2>Ready to make Google love you?</h2>
-            <a href="#" class="cta">Get Your Free Visibility Audit →</a>
-            <p style="margin-top:1rem; color:#888;">Custom strategies. Transparent pricing. Real results.</p>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h2 style="font-weight: 600;">
+                        <img src="https://likeablelosers.com/wp-content/uploads/2025/02/Your-paragraph-text-e1738435336651.png"
+                            alt="Website Logo" class="logo-img" width="50" height="50">
+                    </h2>
+                    <p>Level 1, 12 Sample St<br>Sydney NSW 2000, NY</p>
+                    <div class="status-badge">● Open for projects</div>
+                </div>
+
+                <div class="footer-center">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Paid Ads</a></li>
+                            <li><a href="#">Brand Strategy</a></li>
+                            <li><a href="#">Website Design</a></li>
+                            <li><a href="#">SEO Optimization</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <a href="#" class="social-btn">Instagram</a>
+                    <a href="#" class="social-btn">LinkedIn</a>
+                    <a href="#" class="social-btn">YouTube</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Likeable Losers. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies Settings</a>
+            </div>
+        </div>
+
+        <div class="bg-image">
+            <div class="image"></div>
         </div>
     </footer>
 
 
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+
         // Hamburger Toggle
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('nav-links');
@@ -204,6 +523,8 @@
                 });
             });
         });
+
+        AOS.init();
     </script>
 </body>
 
